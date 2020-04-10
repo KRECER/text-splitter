@@ -8,10 +8,10 @@ import MUISnackbar from '@material-ui/core/Snackbar';
 import BorderClearIcon from '@material-ui/icons/BorderClear';
 
 import img from './mear.png';
-import { getColumnsText, getFullText } from '../../redux/selectors';
-import { ActionCreator } from '../../redux/reducer';
-import AppButton from '../../components/atoms/app-button';
-import AppTextArea from '../../components/atoms/app-textarea';
+import { getColumnsText, getFullText } from '@/redux/selectors';
+import { ActionCreator } from '@/redux/reducer';
+import AppButton from '@/components/atoms/app-button';
+import AppTextArea from '@/components/atoms/app-textarea';
 
 const useOutsideClick = (ref, callback) => {
   const handleClick = (e) => {

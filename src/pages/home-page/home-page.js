@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import MUIContainer from '@material-ui/core/Container';
 
-import { ActionCreator } from '../../redux/reducer';
-import { getFullText } from '../../redux/selectors';
-import LayoutForm from '../../components/molecules/layout-form';
+import { ActionCreator } from '@/redux/reducer';
+import { getFullText } from '@/redux/selectors';
+import LayoutForm from '@/components/molecules/layout-form';
 
 const Container = styled(MUIContainer)`
   display: flex;

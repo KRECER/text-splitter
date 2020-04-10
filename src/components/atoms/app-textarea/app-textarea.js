@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import MUITextField from '@material-ui/core/TextField';
 
-import { marginMixin } from '../../../utils/styled-mixins';
+import { marginMixin } from '@/utils/styled-mixins';
 
 const TextField = styled(MUITextField)`
   .MuiInputBase-inputMultiline::-webkit-scrollbar {
