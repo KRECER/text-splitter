@@ -24,7 +24,7 @@ const LayoutForm = (props) => {
         m={[0, 0, 20, 0]}
         fullWidth
       />
-      <AppButton variant="contained" color="primary" component={Link} to={'/splitter'} disabled={!text} size={'large'}>
+      <AppButton variant="contained" color="primary" component={Link} to={'/layout'} disabled={!text} size={'large'}>
         Layout
       </AppButton>
     </Form>

@@ -67,7 +67,7 @@ const Item = styled.div`
   box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
 `;
 
-const SplitterPage = () => {
+const LayoutPage = () => {
   const [isOpenSnackBar, setIsOpenSnackBar] = useState(false);
   const [countColumns, setCountColumns] = useState(1);
   const [selectedCol, setSelectedCol] = useState(null);
@@ -154,4 +154,4 @@ const SplitterPage = () => {
   );
 };
 
-export default SplitterPage;
+export default LayoutPage;
