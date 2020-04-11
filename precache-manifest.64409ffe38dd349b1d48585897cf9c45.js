@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc5ecb33a48525dc8440309de260d4d3",
+    "revision": "e7b1b47a98b0f2f736223716c6f148f0",
     "url": "/text-splitter/index.html"
   },
   {
-    "revision": "b002041c11ad3e66f811",
-    "url": "/text-splitter/static/js/2.a31ce378.chunk.js"
+    "revision": "1452a43390dc44d2223c",
+    "url": "/text-splitter/static/js/2.e7614d7e.chunk.js"
   },
   {
     "revision": "89ea5e0ed13930f7b9c9c2f392e27cfe",
-    "url": "/text-splitter/static/js/2.a31ce378.chunk.js.LICENSE.txt"
+    "url": "/text-splitter/static/js/2.e7614d7e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "13518eb703d71a24adbc",
-    "url": "/text-splitter/static/js/main.2aa49d91.chunk.js"
+    "revision": "73a44b1bfe903e539d33",
+    "url": "/text-splitter/static/js/main.ad927140.chunk.js"
   },
   {
     "revision": "0f81566df44d90894939",
