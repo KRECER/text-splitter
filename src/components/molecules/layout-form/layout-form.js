@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import AppTextArea from '../../atoms/app-textarea';
-import AppButton from '../../atoms/app-button';
+import AppTextArea from '@/components/atoms/app-textarea';
+import AppButton from '@/components/atoms/app-button';
 
 const Form = styled.form`
   width: 100%;
