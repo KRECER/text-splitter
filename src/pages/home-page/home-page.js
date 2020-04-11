@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import MUIContainer from '@material-ui/core/Container';
 
-import { ActionCreator } from '@/redux/reducer';
+import { ActionCreators } from '@/redux/reducer';
 import { getFullText } from '@/redux/selectors';
 import LayoutForm from '@/components/molecules/layout-form';
 
@@ -20,7 +20,7 @@ const HomePage = () => {
   const dispatch = useDispatch();
 
   const handleChangeTextArea = (e) => {
-    dispatch(ActionCreator.changeFullText(e.target.value));
+    dispatch(ActionCreators.changeFullText(e.target.value));
   };
 
   return (

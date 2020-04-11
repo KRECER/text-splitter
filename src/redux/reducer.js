@@ -8,20 +8,20 @@ const initialState = {
   },
 };
 
-const ActionType = {
+const ActionTypes = {
   CHANGE_FULL_TEXT: 'CHANGE_FULL_TEXT',
   CHANGE_COLUMN_TEXT: 'CHANGE_COLUMN_TEXT',
   SPLIT_TEXT: 'SPLIT_TEXT',
 };
 
-const ActionCreator = {
+const ActionCreators = {
   changeFullText: (text) => ({
-    type: ActionType.CHANGE_FULL_TEXT,
+    type: ActionTypes.CHANGE_FULL_TEXT,
     payload: text,
   }),
 
   changeColumnText: (numCol, text) => {
-    return { type: ActionType.CHANGE_COLUMN_TEXT, payload: { numCol, text } };
+    return { type: ActionTypes.CHANGE_COLUMN_TEXT, payload: { numCol, text } };
   },
 
   splitText: (count, text) => {
@@ -44,13 +44,13 @@ const ActionCreator = {
         break;
     }
 
-    return { type: ActionType.SPLIT_TEXT, payload: obj };
+    return { type: ActionTypes.SPLIT_TEXT, payload: obj };
   },
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case ActionType.CHANGE_FULL_TEXT:
+    case ActionTypes.CHANGE_FULL_TEXT:
       return {
         ...state,
         fullText: action.payload,
@@ -58,7 +58,7 @@ const reducer = (state = initialState, action) => {
         parts: { ...state.parts, column1: action.payload },
       };
 
-    case ActionType.CHANGE_COLUMN_TEXT:
+    case ActionTypes.CHANGE_COLUMN_TEXT:
       return {
         ...state,
         parts: {
@@ -67,7 +67,7 @@ const reducer = (state = initialState, action) => {
         },
       };
 
-    case ActionType.SPLIT_TEXT:
+    case ActionTypes.SPLIT_TEXT:
       return { ...state, parts: action.payload };
 
     default:
@@ -75,4 +75,4 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export { ActionCreator, reducer };
+export { ActionCreators, reducer };

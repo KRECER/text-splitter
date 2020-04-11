@@ -7,9 +7,9 @@ import MUIContainer from '@material-ui/core/Container';
 import MUISnackbar from '@material-ui/core/Snackbar';
 import BorderClearIcon from '@material-ui/icons/BorderClear';
 
-import img from './mear.png';
+import bgIMG from './mear.png';
 import { getColumnsText, getFullText } from '@/redux/selectors';
-import { ActionCreator } from '@/redux/reducer';
+import { ActionCreators } from '@/redux/reducer';
 import AppButton from '@/components/atoms/app-button';
 import AppTextArea from '@/components/atoms/app-textarea';
 
@@ -50,7 +50,7 @@ const TextArea = styled(AppTextArea)`
 const Wrap = styled.div`
   height: 100vh;
   padding: 100px 0;
-  background: url(${img}) no-repeat center;
+  background: url(${bgIMG}) no-repeat center;
   background-size: cover;
 `;
 
@@ -80,11 +80,9 @@ const LayoutPage = () => {
   useOutsideClick(activeColumnRef, () => {
     setIsOpenSnackBar(false);
     if (selectedCol) {
-      const text = Object.keys(columnTexts).reduce((acc, val) => {
-        return acc + ' ' + columnTexts[val];
-      }, '');
-      dispatch(ActionCreator.changeFullText(text.trim()));
-      dispatch(ActionCreator.splitText(countColumns, text.trim()));
+      const text = Object.keys(columnTexts).reduce((acc, numColumn) => acc + ' ' + columnTexts[numColumn], '');
+      dispatch(ActionCreators.changeFullText(text.trim()));
+      dispatch(ActionCreators.splitText(countColumns, text.trim()));
       setSelectedCol(null);
     }
   });
@@ -97,11 +95,11 @@ const LayoutPage = () => {
 
   const handleChangeCountCol = (count) => {
     setCountColumns(count);
-    dispatch(ActionCreator.splitText(count, fullText));
+    dispatch(ActionCreators.splitText(count, fullText));
   };
 
   const handleChangeColumnText = (e) => {
-    dispatch(ActionCreator.changeColumnText(selectedCol, e.target.value));
+    dispatch(ActionCreators.changeColumnText(selectedCol, e.target.value));
   };
 
   const renderBtn = (num) => {
