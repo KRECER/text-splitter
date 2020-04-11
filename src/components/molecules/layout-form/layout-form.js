@@ -16,14 +16,7 @@ const LayoutForm = (props) => {
 
   return (
     <Form>
-      <AppTextArea
-        value={text}
-        onChange={handleChangeText}
-        rows={15}
-        label={'Type here text...'}
-        m={[0, 0, 20, 0]}
-        fullWidth
-      />
+      <AppTextArea value={text} onChange={handleChangeText} rows={25} m={[0, 0, 20, 0]} fullWidth />
       <AppButton variant="contained" color="primary" component={Link} to={'/layout'} disabled={!text} size={'large'}>
         Layout
       </AppButton>

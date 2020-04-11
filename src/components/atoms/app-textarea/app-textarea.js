@@ -6,6 +6,12 @@ import MUITextField from '@material-ui/core/TextField';
 import { marginMixin } from '@/utils/styled-mixins';
 
 const TextField = styled(MUITextField)`
+  .MuiInputBase-root {
+    padding: 15px;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
   .MuiInputBase-inputMultiline::-webkit-scrollbar {
     width: 2px;
     height: 2px;
