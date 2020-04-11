@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/text-splitter/static/js/main.cc6f231e.chunk.js",
-    "main.js.map": "/text-splitter/static/js/main.cc6f231e.chunk.js.map",
+    "main.js": "/text-splitter/static/js/main.2aa49d91.chunk.js",
+    "main.js.map": "/text-splitter/static/js/main.2aa49d91.chunk.js.map",
     "runtime-main.js": "/text-splitter/static/js/runtime-main.5e74baf1.js",
     "runtime-main.js.map": "/text-splitter/static/js/runtime-main.5e74baf1.js.map",
     "static/js/2.a31ce378.chunk.js": "/text-splitter/static/js/2.a31ce378.chunk.js",
     "static/js/2.a31ce378.chunk.js.map": "/text-splitter/static/js/2.a31ce378.chunk.js.map",
     "index.html": "/text-splitter/index.html",
-    "precache-manifest.0099476bf8410419a29a06e2b987dfc9.js": "/text-splitter/precache-manifest.0099476bf8410419a29a06e2b987dfc9.js",
+    "precache-manifest.560517a152ef09e9a2de1c10dd6a1ac3.js": "/text-splitter/precache-manifest.560517a152ef09e9a2de1c10dd6a1ac3.js",
     "service-worker.js": "/text-splitter/service-worker.js",
     "static/js/2.a31ce378.chunk.js.LICENSE.txt": "/text-splitter/static/js/2.a31ce378.chunk.js.LICENSE.txt",
     "static/media/mear.png": "/text-splitter/static/media/mear.791f52be.png"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.5e74baf1.js",
     "static/js/2.a31ce378.chunk.js",
-    "static/js/main.cc6f231e.chunk.js"
+    "static/js/main.2aa49d91.chunk.js"
   ]
 }
