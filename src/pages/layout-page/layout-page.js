@@ -81,10 +81,10 @@ const LayoutPage = () => {
     setIsOpenSnackBar(false);
     if (selectedCol) {
       const text = Object.keys(columnTexts).reduce((acc, val) => {
-        return acc.trim() + ' ' + columnTexts[val];
+        return acc + ' ' + columnTexts[val];
       }, '');
-      dispatch(ActionCreator.changeFullText(text));
-      dispatch(ActionCreator.splitText(countColumns, text));
+      dispatch(ActionCreator.changeFullText(text.trim()));
+      dispatch(ActionCreator.splitText(countColumns, text.trim()));
       setSelectedCol(null);
     }
   });
